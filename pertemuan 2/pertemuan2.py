@@ -36,7 +36,7 @@ for row in df['St_Milik']:
   try:
     df['St_Milik'].isnull()
     int(row)
-    df.loc[cnt, 'St_Milik']=np.nan
+    df.loc[cnt, 'St_Milik'] = np.nan
   except ValueError:
     pass
   cnt+=1
